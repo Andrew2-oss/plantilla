@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<style>
+  /* Estilos globales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Fondo claro */
+  color: #333; /* Texto oscuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007bff; /* Azul primario */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos de la tabla */
+.table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden;
+}
+
+/* Encabezados */
+.table thead {
+  background-color: #007bff; /* Azul primario */
+  color: #fff;
+  font-size: 1rem;
+}
+
+.table thead th {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Filas */
+.table tbody tr {
+  border-bottom: 1px solid #ddd; /* Línea divisoria */
+  transition: background-color 0.3s ease; /* Efecto de hover */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Color alterno */
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef; /* Color de hover */
+}
+
+/* Celdas */
+.table tbody th,
+.table tbody td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .table thead th {
+    font-size: 0.9rem;
+  }
+
+  .table tbody th,
+  .table tbody td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+</style>
+<h1>Estadisticas Para Repositorio Sena</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Areas sena</th>
+      <th scope="col">Vistas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Analisis y desarrollo se software</th> 
+      <th>78</th>
+    </tr>
+    <tr>
+      <th>Ocupaciones de Dirección y Gerencia</th>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>Finanzas y Administración</th>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Ciencias Naturales, Aplicadas y Relacionadas</th>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>Salud</th>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>Ciencias Sociales, Educación, Servicios Gubernamentales y Religión</th>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Arte, Cultura, Esparcimiento y Deportes</th>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Ventas y Servicios</th>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>Operación de Equipos, del Transporte y Oficios</th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>Procesamiento, Fabricación y Ensamble</th>
+      <td>39</td>
+    </tr>
+  </tbody>
+</table>
+

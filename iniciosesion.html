@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+    <style>
+        /* Estilos globales */
+body.body1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; /* Fondo claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* Estilos del formulario */
+form {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px 30px;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 400px; /* Ancho máximo */
+  text-align: center; /* Centrar contenido */
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333; /* Texto oscuro */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff; /* Azul primario en el foco */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efecto de foco */
+}
+
+/* Recordar y Olvidar Contraseña */
+.remember {
+  display: flex;
+  justify-content: space-between; /* Separar los elementos */
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember p {
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remember p:hover {
+  color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Botón */
+input[type="submit"].btn-1 {
+  background-color: #007bff; /* Azul primario */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Botón ocupa todo el ancho */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"].btn-1:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+input[type="submit"].btn-1:active {
+  background-color: #003d80; /* Azul más profundo */
+  transform: translateY(0); /* Volver al nivel original */
+}
+</style>
+</head>
+<body class="body1">
+    <form>
+        <h2>Inicio sesion</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username">
+
+        <label for="password">Password</label>
+        <input type= "password">
+
+        <div class="remember">
+            <p>Recordar</p>
+            <p>Olvide contraseña?</p>
+        </div>
+
+        <input type="submit" class="btn-1" value="Iniciar">
+
+    </form>
+</body>
+</html>

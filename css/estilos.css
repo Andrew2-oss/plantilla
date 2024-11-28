@@ -1,0 +1,115 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #e6f2ff; /* Fondo suave y agradable */
+    color: #333; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+  }
+  
+  .container {
+    max-width: 600px;
+    background: #fff; /* Fondo blanco para el contenido */
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #007bff; /* Azul para destacar el título */
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Separación entre campos */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #555; /* Color gris oscuro para los textos */
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff; /* Azul en el enfoque */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resalta el campo activo */
+  }
+  
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efectos en hover */
+  }
+  
+  button img {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  button.btn-info {
+    background-color: #17a2b8; /* Azul claro */
+    color: #fff;
+  }
+  
+  button.btn-info:hover {
+    background-color: #138496;
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+  
+  button.btn-warning {
+    background-color: #ffc107; /* Amarillo */
+    color: #212529;
+  }
+  
+  button.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+  
+  .tarjeta {
+    display: flex;
+    justify-content: space-between; /* Botones bien separados */
+    margin-top: 20px;
+  }
+  
+  /* Adaptación para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  
+    .tarjeta {
+      flex-direction: column;
+      gap: 10px; /* Separación entre botones */
+    }
+  }
+  
